@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Products</title>
+		<meta name="description" content="Products pagge" />
+		<meta name="keywords" content="HTML" />
+		<meta name="author" content="bruhdeep" />
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="navbar">
+			<a class="logo" href="../home.html"> Book store</a>
+			<ul class="nav">
+				<li><a href="../home.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="contactbox">
+			<form name="msgform" onsubmit="validateform()">      
+				<input name="name" type="text" class="feedback-input" placeholder="Name" />   
+				<input name="email" type="text" class="feedback-input" placeholder="Email" />
+				<textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+				<input type="submit" value="SUBMIT"/>
+			</form>
+
+			<script type="text/javascript">
+				function validateform() 
+				{
+					var name = document.forms["msgform"]["name"].value;
+					var email= document.forms["msgform"]["email"].value;
+					var text = document.forms["msgform"]["text"].value;
+					var messageDetails = document.forms["msgform"]["text"].value;
+					//alert(messageDetails);
+				if (name == "" || email == "" || messageDetails == "")
+						{
+							alert("Empty fields found!! Please fill them respectively.");
+						} 
+						else
+						{
+							alert("Your message has been noted.");
+						}
+					}
+			</script>
+		</div>
+
+		<p style="padding-top: 4%; font-size: 30px; margin: 0;"><span id='date-time'></span>.</p>
+		<script src="../js/time.js"></script> 
+
+		<section class="end" style="position: absolute; bottom:-20%; width: 100%;">
+			<div class="max-width">
+				<div class="foot-1">
+					<div class="col">
+						<div class="text-1">contact info</div>
+						<div class="primary">Address</div>
+						<div class="secondary">Bhaktapur, Nepal</div>
+						<div class="primary">Email</div>
+						<div class="secondary">fortniteballs@gmail.com</div>
+					</div>
+					<div class="col">
+						<div class="text-1">My account</div>
+						<div class="secondary">about us</div>
+						<div class="secondary">contact us</div>
+						<div class="secondary">my account</div>
+						<div class="secondary">orders history</div>
+						<div class="secondary">more details</div>
+					</div>
+					<div class="col">
+						<div class="text-1">Quick acess</div>
+						<div class="secondary">Home</div>
+						<div class="secondary">Products</div>
+						<div class="secondary">Blog</div>
+						<div class="secondary">Research</div>
+						<div class="secondary">Contact</div>
+					</div>
+					<div class="col">
+						<div class="text-1">Other stuff</div>
+						<div class="secondary"><a href="https://youtu.be/dQw4w9WgXcQ">not sus link</a></div>
+						<div class="secondary"><a href="https://anilist.co/user/Pradeep69/">Anilist</a></div>
+						<div class="secondary">Twitter</div>
+						<div class="secondary">Facebook</div>
+						<div class="secondary">Reddit</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

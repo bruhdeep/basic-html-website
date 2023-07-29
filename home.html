@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="description" content="Home page">
+        <meta name="keywords" content="HTML">
+        <meta name="author" content="bruhdeep">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <style type="text/css">
+		.slider{
+			overflow: hidden;
+            height: 832px;
+		}
+        .slider img{
+            margin-left: 10%;
+            margin-top: 7%;
+            width:30%;
+            height: 650px;
+        }
+	</style>
+    <body>
+        
+        <div class="navbar">
+            <a class="logo" href="home.html"> Book store</a>
+            <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+				<li><a href="pages/products.html">Products</a></li>
+				<li><a href="pages/blog.html">Blog</a></li>
+				<li><a href="pages/research.html">Research</a></li>
+				<li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    <section class="banner-area" id="home">
+        <div class="slider">
+            <div id="img">
+                <img src="images/e.jpeg">
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var images = ['images/a.jpeg', 'images/b.jpg', 'images/c.jpg', 'images/d.jpg', 'images/e.jpeg'];
+            var x = 0;
+            var imgs = document.getElementById('img');
+            setInterval(slider, 7000);
+            function slider()
+            {
+                if (x < images.length)
+                {
+                    x = x + 1;
+                }
+                else 
+                {
+                    x = 1;
+    
+                }
+                imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    
+            }
+        </script>
+    </section>
+
+    
+
+    <section class="ad">
+        <div class="adtext">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deserunt aperiam tenetur dicta itaque quis tempore soluta eaque fugiat! Reiciendis cumque tempore delectus praesentium ea nesciunt facere magni aut dolorem.</p>
+        </div>
+        <div class="button">
+            <a href="pages/products.html" class="btn">Buy now</a>
+        </div>
+    </section>
+
+    <section class="new" id="neww">
+        <div class="new-publish">
+			<h1>New Publishes</h1>
+		</div>
+		<div class="newpubbox">
+			<div class="product">
+				<div class="img">
+					<img src="images/Ninth-Life_final.jpg" alt="image">
+				</div>
+				<div class="info">
+					<h3>Ninth life</h3>
+					<h4>Rs 727</h4>
+				</div>
+			</div>
+			<div class="product">
+				<div class="img">
+					<img src="images/memory.jpg" alt="image">
+				</div>
+				<div class="info">
+					<h3>MEMORY</h3>
+					<h4>Rs 420</h4>
+				</div>
+			</div>
+			<div class="product">
+				<div class="img">
+					<img src="images/tessoftheroad.jpg" alt="image">
+				</div>
+				<div class="info">
+					<h3>Tess of the road</h3>
+					<h4>Rs 911</h4>
+				</div>
+			</div>
+            <div class="product">
+				<div class="img">
+					<img src="images/sixofrows.jpg" alt="image">
+				</div>
+				<div class="info">
+					<h3>Six of crows</h3>
+					<h4>Rs 666</h4>
+				</div>
+			</div>
+            <div class="product">
+				<div class="img">
+					<img src="images/SHED.jpg" alt="image">
+				</div>
+				<div class="info">
+					<h3>SHED</h3>
+					<h4>Rs 777</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    </body>
+    <section class="end">
+        <div class="max-width">
+            <div class="foot-1">
+                <div class="col">
+                    <div class="text-1">contact info</div>
+                    <div class="primary">Address</div>
+                    <div class="secondary">Bhaktapur, Nepal</div>
+                    <div class="primary">Email</div>
+                    <div class="secondary">fortniteballs@gmail.com</div>
+                </div>
+                <div class="col">
+                    <div class="text-1">My account</div>
+                    <div class="secondary">about us</div>
+                    <div class="secondary">contact us</div>
+                    <div class="secondary">my account</div>
+                    <div class="secondary">orders history</div>
+                    <div class="secondary">more details</div>
+                </div>
+                <div class="col">
+                    <div class="text-1">Quick acess</div>
+                    <div class="secondary">Home</div>
+                    <div class="secondary">Products</div>
+                    <div class="secondary">Blog</div>
+                    <div class="secondary">Research</div>
+                    <div class="secondary">Contact</div>
+                </div>
+                <div class="col">
+                    <div class="text-1">Other stuff</div>
+                    <div class="secondary"><a href="https://youtu.be/dQw4w9WgXcQ">not sus link</a></div>
+                    <div class="secondary"><a href="https://anilist.co/user/Pradeep69/">Anilist</a></div>
+                    <div class="secondary">Twitter</div>
+                    <div class="secondary">Facebook</div>
+                    <div class="secondary">Reddit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</html>
